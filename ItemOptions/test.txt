@@ -1,0 +1,67 @@
+int EnchantCalculation(int ID) {
+	int Value = 0;
+	if (ID == 1)  // MAX HP
+		Value = 100 + rand() % 400;
+	if (ID == 2) // MAX SP
+		Value = 25 + rand() % 125;
+	if (ID >= 3 && ID <= 8) // atributos
+		Value = 1 + rand() % 5;
+	if (ID >= 9 && ID <= 14) // HP e SP %,  HP e SP regen, ATK% e MATK% e DANO GLOBAL
+		Value = 1 + rand() % 24;
+	if (ID == 15)			// ASPD BASE
+		Value = 1 + rand() % 3;
+	if (ID == 16)				// ASPD %
+		Value = 1 + rand() % 19;
+	if (ID >= 17 && ID <= 19) // ATK HIT E ATKM
+		Value = 1 + rand() % 24;
+	if (ID >= 20 && ID <= 21) // DEF E MDEF
+		Value = 1 + rand() % 5;
+	if (ID == 22) //FLEE
+		Value = 1 + rand() % 14;
+	if (ID == 23) // PERFECTFLEE
+		Value = 1 + rand() % 9;
+	if (ID == 24) //CRITICAL
+		Value = 1 + rand() % 19;
+	if (ID == 25) //Tolerencia a neutro
+		Value = 1 + rand() % 9;
+	if (ID >= 26 && ID <= 34) //Tolerencia elementos
+		Value = 1 + rand() % 19;
+	if (ID == 35) // Tolerancia a tudo
+		Value = 1 + rand() % 4;
+	return Value;
+}
+
+int EnchantCalculationArmor(int ID) {
+	int Value = 0;
+	if (ID == 1)  // MAX HP
+		Value = 100 + rand() % 400;
+	if (ID == 2) // MAX SP
+		Value = 25 + rand() % 125;
+	if (ID >= 3 && ID <= 8) // atributos
+		Value = 1 + rand() % 5;
+	if (ID >= 9 && ID <= 12) // HP e SP %,  HP e SP regen, ATK% e MATK% e DANO GLOBAL
+		Value = 1 + rand() % 24;
+	if (ID >= 13 && ID <= 14) // HP e SP %,  HP e SP regen, ATK% e MATK% e DANO GLOBAL
+		Value = 1 + rand() % 4;
+	if (ID == 15)			// ASPD BASE
+		Value = 1 + rand() % 2;
+	if (ID == 16)		   // ASPD %
+		Value = 1 + rand() % 3;
+	if (ID >= 17 && ID <= 19) // ATK HIT E ATKM
+		Value = 1 + rand() % 24;
+	if (ID >= 20 && ID <= 21) // DEF E MDEF
+		Value = 1 + rand() % 5;
+	if (ID == 22) //FLEE
+		Value = 1 + rand() % 14;
+	if (ID == 23) // PERFECTFLEE
+		Value = 1 + rand() % 9;
+	if (ID == 24) //CRITICAL
+		Value = 1 + rand() % 2;
+	if (ID == 25) //Tolerencia a neutro
+		Value = 1 + rand() % 9;
+	if (ID >= 26 && ID <= 34) //Tolerencia elementos
+		Value = 1 + rand() % 19;
+	if (ID == 35) // Tolerancia a tudo
+		Value = 1 + rand() % 4;
+	return Value;
+}
